@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Golden Standard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="website icon" type="jpg" href="logo1.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/55287b7042.js" crossorigin="anonymous"></script>
+    <style>
+      body{
+        background-color: black;
+        color: aliceblue;
+      }
+        .head1{
+            margin-top: 90px;
+            margin-bottom: 250px;   
+        }
+        .head2{
+            
+            margin-bottom: 250px;   
+        }
+        .head3{
+            margin-top: 170px;
+            margin-bottom: 250px;
+        }
+        ul{
+            margin-left: 150px;
+        }
+        li{
+            font-weight: bolder;
+            font-size: 25px;
+        }
+        #button:hover {
+            animation: shake 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+        .card-toggle{
+          transition: all 1s;
+        }
+        .card-toggle:hover{
+          transform: rotate3d(0, 1, 0, 3.142rad);
+        }
+        .whats-app {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 15px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            /* box-shadow: 2px 2px 3px #999; */
+            z-index: 100;
+        }
+
+        .my-float {
+            margin-top: 15px;
+        }
+        .card-scale{
+          transition: all .4s ease-in-out;
+        }
+        .card-scale:hover {
+           transform: scale(0.9);
+        }
+        
+
+        
+
+        #slide1 {
+          animation-name: slidingstep1;
+          animation-duration: 20s;
+          animation-iteration-count: infinite;         
+          animation-direction: normal;
+          animation-timing-function: linear;
+          /* animation-fill-mode: forwards; */
+        }
+        @keyframes slidingstep1 {
+          0%   { transform: scale(1.2); opacity:0;}
+          5%   { transform: scale(1.2); opacity:0.2;}
+          10%   { transform: scale(1.2); opacity:0.4;}
+          15%   { transform: scale(1.2); opacity:0.6;}    
+          20%  { transform: scale(1.2); opacity:1; }
+          100% { transform: scale(1.2); opacity:1; }
+        }
+        
+  </style>
+  </head>
+  <body>
+    
+                    <!-- Image and text -->
+        <nav class="navbar sticky-top  bg-dark">
+        <a class="navbar-brand " href="#">
+            <img src="logo1.png" width="40" height="40" class="d-inline-block align-top" alt="">
+            <span style="color: rgb(145, 105, 53);">GOLDEN STANDARD </span><span style="color: aqua; font-weight: bolder;">WHEY.</span>
+        </a>
+        <button type="button" class="btn "  id="button" style="width: 160px;background-color:  rgb(145, 105, 53);margin-right: 20px;">Get Started</button>
+        </nav>
+
+                    <!-- navigationbar -->
+
+        <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#"><img src="logo1.png" width="100" height="100" style="margin-left: 90px;" alt=""></a><span style="font-weight: bolder; font-size: 55px;">SUPPK<span style="color: aqua;">E.</span></span>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown" >
+              <ul class="navbar-nav  text-center" >
+                <li class="nav-item active">
+                  <a class="nav-link" href="#" style="color: aliceblue;">Home <span class="sr-only">(current)</span></a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a style="color: aliceblue;" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: black;" >
+                      <a class="dropdown-item" href="#" style="color: aliceblue; ">Action</a>
+                      <a class="dropdown-item" href="#" style="color: aliceblue; ">Another action</a>
+                      <a class="dropdown-item" href="#" style="color: aliceblue; ">Something else here</a>
+                    </div>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#latest" style="color: aliceblue;">New Arrivals</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact" style="color: aliceblue;">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass" style="color: aqua;" ></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-spider" style="color: aqua;"></i></a>
+                  </li>
+              </ul>
+              <button type="button" class="btn text-dark" id="button" style="background-color: aqua; border-radius: 25px;  width: 170px; ">Order now <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+          </nav>
+    </div>
+
+                         <!-- main grid with text and image -->
+
+
+    <div class="container head1" id="">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <span style="font-weight: bolder; font-size: 60px;">Super </span><span style="color: aqua;font-weight: bolder; font-size: 60px;">Convenient</span><br>
+                <span style="font-weight: bolder; font-size: 60px;">Quality Protein</span><br><br>
+                <div class="row text-center">
+                    <span style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tempore eaque harum.dolor sit amet consectetur adipisicing elit. Labore tempore eaque harum.</span>
+                </div><br>
+                <button type="button" class="btn" id="button" style="background-color: aqua; border-radius: 25px; color: aliceblue; width: 170px;">PURCHASE</button>&nbsp;&nbsp;
+                <button type="button" class="btn" id="button" style="border: 2px aqua solid; border-radius: 25px; color: aqua; width: 170px;">CONTACT</button>
+            </div>
+
+            <div class="col-md-6 col-sm-12 align-self-center">
+                <img src="power.png" alt="" style="  margin-left: 80px;margin-top: 20px;" class="w-75 " id="slide1" >
+            </div>
+            
+        </div>
+    </div>
+
+                        <!-- cards and texts -->
+
+    <div class="container head2" id="">
+
+    <div class="row">
+
+      <div class="col-md-4 col-sm-6 col-xs-12 col-lg-3 " >          
+        <div class="card border-0  text-center " style="background-color: black; color: white;">           
+            <img src="energy.png" class="card-img-top h-50 w-50 align-self-center card-toggle" alt="..."  >
+            <div class="card-body">
+              <h5 class="card-title">Increased Energy</h5>
+              <p class="card-text">Lorem ipsum dolor sitdfg adipisicing elit.</p>
+            </div>
+        </div>        
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12 col-lg-3 " >   
+        <div class="card border-0 text-center" style="background-color: black;color: white;">      
+            <img src="caloriee.png" class="card-img-top h-50 w-50 align-self-center card-toggle" alt="..."  >
+            <div class="card-body">
+              <h5 class="card-title">Calorie Build Up</h5>
+              <p class="card-text">Lorem ipsum dolor sitdfg adipisicing elit.</p>
+            </div>
+        </div>   
+      </div>
+              
+      <div class="col-md-4 col-sm-6 col-xs-12 col-lg-3 " >  
+        <div class="card border-0 text-center" style="background-color: black;color: white;">     
+            <img src="grow-up.png" class="card-img-top h-50 w-50 align-self-center card-toggle" alt="..."  >
+            <div class="card-body">
+              <h5 class="card-title">Energy Grow Up</h5>
+              <p class="card-text">Lorem ipsum dolor sitdfg adipisicing elit.</p>
+            </div>
+          </div>  
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12 col-lg-3 " >  
+        <div class="card border-0 text-center" style="background-color: black;color: white;">     
+            <img src="regular-routine.png" class="card-img-top h-50 w-50 align-self-center card-toggle" alt="..."  >
+            <div class="card-body">
+              <h5 class="card-title">Regular Routine</h5>
+              <p class="card-text">Lorem ipsum dolor sitdfg adipisicing elit.</p>
+            </div>
+          </div>    
+      </div>
+    </div>
+    </div> 
+    </div>
+    </div>
+
+                        <!-- carousel and texts -->
+
+    <div class="container head2" id="">
+      
+      <div id="carouselExampleIndicators" class="carousel slide" >
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-6 col-sm-12 align-self-center">
+                <img class="d-block img-fluid" src="jogging.png" alt="First slide" >
+              </div>
+              <div class="col-md-6 col-sm-12 align-self-center text-center" >
+                <span style="font-weight: bolder; font-size: 40px;margin-left: 35px; color: aliceblue;">Jog </span><span style="color: aqua;font-weight: bolder; font-size: 40px;">Conveniently</span><br>
+                <span style="font-weight: bolder; font-size: 40px;margin-left: 35px;color: aliceblue;">Quality Protein</span><br><br>
+                <div class="row text-center">
+                    <span style="text-align: center;color: aliceblue;">"Fear is gradually replaced by excitement and a simple <br> desire to see what you can do on the day."<br> - <span style="font-weight: bolder;color: aqua;">Lauren Fleshman</span> , American distance runner</span>
+                </div><br>
+            </div>
+              
+          </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-6 col-sm-12 align-self-center">
+                <img class="d-block img-fluid" src="jogging.png" alt="First slide">
+              </div>
+              <div class="col-md-6 col-sm-12 align-self-center text-center" >
+                <span style="font-weight: bolder; font-size: 40px;margin-left: 35px; color: aliceblue;">Jog </span><span style="color: aqua;font-weight: bolder; font-size: 40px;">Conveniently</span><br>
+                <span style="font-weight: bolder; font-size: 40px;margin-left: 35px;color: aliceblue;">Quality Protein</span><br><br>
+
+                <div class="row text-center">
+                    <span style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Labore tempore eaque harum.dolor sit amet<br> consectetur adipisicing elit.</span>
+                </div><br>
+            </div>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+
+              <div class="col-md-6 col-sm-12 align-self-center">
+                <img class="d-block img-fluid" src="jogging.png" alt="First slide">
+              </div>
+              <div class="col-md-6 col-sm-12 align-self-center text-center" >
+                <span style="font-weight: bolder; font-size: 40px;margin-left: 35px; color: aliceblue;">Jog </span><span style="color: aqua;font-weight: bolder; font-size: 40px;">Conveniently</span><br>
+                <span style="font-weight: bolder; font-size: 40px;margin-left: 35px;color: aliceblue;">Quality Protein</span><br><br>
+
+
+                <div class="row text-center">
+                    <span style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Labore tempore eaque harum.dolor sit amet<br> consectetur adipisicing elit.</span>
+                </div><br>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+    </div>
+    </div>
+
+                         <!-- latest products and description -->
+
+
+    <div id="latest">
+      <div class="container head3"  >
+        <P class="h1 text-center"  style="font-weight: bolder;">LATEST ARRIVALS</P><br><br>
+        <div class="row ">
+          <div class="col-md-4 col-sm-6 col-xs-12 col-lg-3">
+            <div class="card border-0  text-center " style="width: 13rem;background-color: black;">
+              <img src="img1.11.png" class="card-img-top  align-self-center card-scale" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-white"  >USN BlueLab 100% Whey Protein</h5>
+                <!-- <p class="card-text">An USN Product
+                  Optimal For Muscle Support & Recovery From Training!</p> -->
+                <a href="#" class="btn text-dark"id="button"style="background-color: aqua; border-radius: 25px;  width: 170px;">More Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 col-lg-3">
+            <div class="card border-0  text-center " style="width: 13rem;background-color: black;">
+              <img src="img1.12.png" class="card-img-top align-self-center card-scale" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-white" >Primeval Labs 100% Whey Protein</h5>
+                <!-- <p class="card-text">A Primeval Labs Product
+                  100% Whey Protein That Is Easy to Mix, and Affordable!</p> -->
+                <a href="#" class="btn text-dark"id="button"style="background-color: aqua; border-radius: 25px;  width: 170px;">More Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 col-lg-3">
+            <div class="card border-0  text-center " style="width: 13rem;background-color: black;">
+              <img src="img1.13.png" class="card-img-top align-self-center card-scale" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-white" >Scivation Xtend Pro Whey Isolate</h5>
+                <!-- <p class="card-text">A Scivation Product
+                  Designed to Maximize Muscle Retention, Recovery, and Growth*</p> -->
+                <a href="#" class="btn text-dark"id="button"style="background-color: aqua; border-radius: 25px;  width: 170px;">More Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 col-lg-3">
+            <div class="card border-0  text-center " style="width: 13rem;background-color: black;">
+              <img src="img1.14.png" class="card-img-top align-self-center card-scale" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-white">Rival Nutrition Rival pro Whey</h5>
+                <!-- <p class="card-text">A Rival Nutrition Product
+                  100% Whey Protein That Is Easy to Mix, and Affordable!</p> -->
+                <a href="#" class="btn text-dark" id="button"style="background-color: aqua; border-radius: 25px;  width: 170px;">More Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+            </div>
+
+            <!-- <div class="col-md-6 col-sm-12 align-self-center">
+                <img src="power.png" alt="" style="  margin-left: 80px;margin-top: 20px;" class="w-75">
+            </div> -->
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          <!-- gallery -->
+
+
+
+    <div id="gallery">
+      <div class="container head3"  >
+        <P class="h1 text-center"  style="font-weight: bolder;">PRODUCTS AVAILABLE</P><br><br>
+        <div class="row">
+        <div class="col-md-3" >
+          <div class="thumbnail text-center" >
+            <!-- <a href="/w3images/lights.jpg"> -->
+              <img src="p1.png" alt="Lights"  width="250px" height="250px" class="card-scale"><br><br>
+              <div class="caption">
+                <h1 style="font-size: 25px;" class="text-center">Whey Protein</h1>
+                <p>Lorem ipsum...</p>
+                <button type="button" class="btn btn-sm" style="background-color: aqua;" id="button">Add to cart</button>
+
+              </div>
+            <!-- </a> -->
+          </div>
+        </div>
+
+        <div class="col-md-3" >
+          <div class="thumbnail text-center" >
+            <!-- <a href="/w3images/lights.jpg"> -->
+              <img src="p2.png" alt="Lights"  width="250px" height="250px"class="card-scale"><br><br>
+              <div class="caption">
+                <h1 style="font-size: 25px;" class="text-center">Whey Protein</h1>
+                <p>Lorem ipsum...</p>
+                <button type="button" class="btn btn-sm" style="background-color: aqua;" id="button">Add to cart</button>
+
+              </div>
+            <!-- </a> -->
+          </div>
+        </div>
+
+        <div class="col-md-3" >
+          <div class="thumbnail text-center" >
+            <!-- <a href="/w3images/lights.jpg"> -->
+              <img src="p3.png" alt="Lights"  width="250px" height="250px"class="card-scale"><br><br>
+              <div class="caption">
+                <h1 style="font-size: 25px;" class="text-center">Whey Protein</h1>
+                <p>Lorem ipsum...</p>
+                <button type="button" class="btn btn-sm" style="background-color: aqua;" id="button">Add to cart</button>
+
+              </div>
+            <!-- </a> -->
+          </div>
+        </div>
+
+        <div class="col-md-3" >
+          <div class="thumbnail text-center" >
+            <!-- <a href="/w3images/lights.jpg"> -->
+              <img src="p4.png" alt="Lights"  width="250px" height="250px"class="card-scale"><br><br>
+              <div class="caption">
+                <h1 style="font-size: 25px;" class="text-center">Whey Protein</h1>
+                <p>Lorem ipsum...</p>
+                <button type="button" class="btn btn-sm" style="background-color: aqua;" id="button">Add to cart</button><br><br><br><br>
+
+              </div>
+            <!-- </a> -->
+          </div>
+        </div>
+
+        <div class="col-md-3" >
+          <div class="thumbnail text-center" >
+            <!-- <a href="/w3images/lights.jpg"> -->
+              <img src="p5.png" alt="Lights"  width="250px" height="250px"class="card-scale"><br><br>
+              <div class="caption">
+                <h1 style="font-size: 25px;" class="text-center">Whey Protein</h1>
+                <p>Lorem ipsum...</p>
+                <button type="button" class="btn btn-sm" style="background-color: aqua;" id="button">Add to cart</button>
+
+              </div>
+            <!-- </a> -->
+          </div>
+        </div>
+
+        <div class="col-md-3" >
+          <div class="thumbnail text-center" >
+            <!-- <a href="/w3images/lights.jpg"> -->
+              <img src="img1.12.png" alt="Lights"  width="250px" height="250px"class="card-scale"><br><br>
+              <div class="caption">
+                <h1 style="font-size: 25px;" class="text-center">Whey Protein</h1>
+                <p>Lorem ipsum...</p>
+                <button type="button" class="btn btn-sm" style="background-color: aqua;" id="button">Add to cart</button>
+
+              </div>
+            <!-- </a> -->
+          </div>
+        </div>
+
+        <div class="col-md-3" >
+          <div class="thumbnail text-center" >
+            <!-- <a href="/w3images/lights.jpg"> -->
+              <img src="p7.png" alt="Lights"  width="250px" height="250px"class="card-scale"><br><br>
+              <div class="caption">
+                <h1 style="font-size: 25px;" class="text-center">Whey Protein</h1>
+                <p>Lorem ipsum...</p>
+                <button type="button" class="btn btn-sm" style="background-color: aqua;" id="button">Add to cart</button>
+
+              </div>
+            <!-- </a> -->
+          </div>
+        </div>
+
+        <div class="col-md-3" >
+          <div class="thumbnail text-center" >
+            <!-- <a href="/w3images/lights.jpg"> -->
+              <img src="img1.13.png" alt="Lights"  width="250px" height="250px"class="card-scale"><br><br>
+              <div class="caption">
+                <h1 style="font-size: 25px;" class="text-center">Whey Protein</h1>
+                <p>Lorem ipsum...</p>
+                <button type="button" class="btn btn-sm" style="background-color: aqua;" id="button">Add to cart</button><br><br><br><br>
+
+              </div>
+            <!-- </a> -->
+          </div>
+        </div>
+
+        <div class="col-md-3" >
+          <div class="thumbnail text-center" >
+            <!-- <a href="/w3images/lights.jpg"> -->
+              <img src="p9.png" alt="Lights"  width="250px" height="250px"class="card-scale"><br><br>
+              <div class="caption">
+                <h1 style="font-size: 25px;" class="text-center">Whey Protein</h1>
+                <p>Lorem ipsum...</p>
+                <button type="button" class="btn btn-sm" style="background-color: aqua;" id="button">Add to cart</button>
+
+              </div>
+            <!-- </a> -->
+          </div>
+        </div>
+
+        <div class="col-md-3" >
+          <div class="thumbnail text-center" >
+            <!-- <a href="/w3images/lights.jpg"> -->
+              <img src="p10.png" alt="Lights"  width="250px" height="250px"class="card-scale"><br><br>
+              <div class="caption">
+                <h1 style="font-size: 25px;" class="text-center">Whey Protein</h1>
+                <p>Lorem ipsum...</p>
+                <button type="button" class="btn btn-sm" style="background-color: aqua;" id="button">Add to cart</button>
+
+              </div>
+            <!-- </a> -->
+          </div>
+        </div>
+
+        <div class="col-md-3" >
+          <div class="thumbnail text-center" >
+            <!-- <a href="/w3images/lights.jpg"> -->
+              <img src="p11.png" alt="Lights"  width="250px" height="250px"class="card-scale"><br><br>
+              <div class="caption">
+                <h1 style="font-size: 25px;" class="text-center">Whey Protein</h1>
+                <p>Lorem ipsum...</p>
+                <button type="button" class="btn btn-sm" style="background-color: aqua;" id="button">Add to cart</button>
+
+              </div>
+            <!-- </a> -->
+          </div>
+        </div>
+
+        <div class="col-md-3" >
+          <div class="thumbnail text-center" >
+            <!-- <a href="/w3images/lights.jpg"> -->
+              <img src="img1.14.png" alt="Lights"  width="250px" height="250px"class="card-scale"><br><br>
+              <div class="caption">
+                <h1 style="font-size: 25px;" class="text-center">Whey Protein</h1>
+                <p>Lorem ipsum...</p>
+                <button type="button" class="btn btn-sm" style="background-color: aqua;" id="button">Add to cart</button>
+
+              </div>
+            <!-- </a> -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <!-- accordion -->
+
+<div class="container head3">
+    <P class="h1 text-center"  style="font-weight: bolder;">HOW TO FOLLOW OUR ROUTINES</P><br><br>
+
+    <div class="accordion" id="accordionExample" >
+        <div class="accordion-item" style="background-color: black;">
+          <h2 class="accordion-header" >
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              ROUTINE #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body" >
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" style="background-color: black;">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              ROUTINE #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item"  style="background-color: black;">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              ROUTINE #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+    
+
+
+
+
+                               <!-- Whatsapp icon -->
+
+    <a  class="whats-app" href="https://wa.me/9946737904" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+      </a>
+  
+  
+                                <!-- footer -->
+
+  <div id="contact">
+    <div class="container-fluid" style="background-color: rgb(145, 105, 53);;" >
+      <footer class=" text-center">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+            data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #3b5998;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #55acee;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #dd4b39;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #ac2bac;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            
+          </section>
+          <!-- Section: Social media -->
+          
+        </div>
+        <!-- Grid container -->
+
+
+        <!-- Section: Links  -->
+        <section class="" style="margin-top: -60px;">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i> <span style="color: black;font-weight: bolder;">GOLDEN STANDARD</span>
+                </h6>
+                <p>
+                  Here you can use rows and columns to organize your footer content. Lorem ipsum
+                  dolor sit amet, consectetur adipisicing elit.
+                </p>
+              </div>
+              <!-- Grid column -->
+              
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4" style="color: black;font-weight: bolder;">Contact</h6>
+                <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  info@example.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      </div>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(142, 49, 49, 0.05);">
+          © 2020 Copyright:
+          <a class="text-body" href="https://mdbootstrap.com/">Mhdbasitha.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    
+  </div>
+
+
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
